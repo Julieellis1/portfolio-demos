@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Everyday Tech, Honestly Priced | VoltEdge</title>
+<meta name="description" content="VoltEdge is a demo electronics store: headphones, wearables, laptops, gaming gear and accessories.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<div class="announce">Summer Sale is live: up to <b>20% off</b> sitewide, ends soon. Free shipping over $75.</div>
+<header class="site-header"><div class="container nav-bar">
+<a class="brand" href="index.html">Volt<span>Edge</span></a>
+<nav class="main-nav"><a href="index.html" class="active">Home</a><a href="shop.html" class="">Shop</a><a href="about.html" class="">About</a><a href="news.html" class="">News</a><a href="contact.html" class="">Contact</a></nav>
+<div class="nav-icons">
+<button class="icon-btn js-search-toggle" aria-label="Search">&#128269;</button>
+<a class="icon-btn" href="wishlist.html" aria-label="Wishlist">&#9825;<span class="count-badge js-wish-count">0</span></a>
+<button class="icon-btn js-cart-open" aria-label="Cart">&#128722;<span class="count-badge js-cart-count">0</span></button>
+<button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+</div></div>
+<div class="container"><div class="search-bar"><input type="search" placeholder="Search headphones, laptops, wearables..." aria-label="Search products"></div></div>
+</header>
+<div class="mobile-nav" id="mobileNav"><button class="mclose" aria-label="Close menu">&times;</button><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="news.html">News</a><a href="contact.html">Contact</a><a href="wishlist.html">Wishlist</a><a href="faq.html">FAQ</a></div>
+<div class="drawer-veil" id="drawerVeil"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+<div class="cd-head"><h3>Your Cart</h3><button class="cd-close" aria-label="Close cart">&times;</button></div>
+<div class="cd-items"></div>
+<div class="cd-foot"></div>
+</aside>
+
+<section class="hero"><div class="container hero-grid">
+<div>
+<span class="eyebrow">Flagship Audio</span>
+<h1>Aurora X9 <em>Wireless</em> Headphones</h1>
+<p>Adaptive noise cancellation, 40-hour battery and studio-tuned sound. The headphones our reviewers keep stealing from the office.</p>
+<div class="hero-price"><span class="now">$249.00</span><span class="was">$329.00</span></div>
+<div class="hero-ctas">
+<button class="btn solid" data-add="aurora-x9">Add to Cart</button>
+<a class="btn ghost" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.3)" href="product-aurora-x9.html">View Product</a>
+</div></div>
+<div class="hero-img"><span class="hero-tag">Best Seller</span><img src="images/voltedge-headphones.jpg" alt="Aurora X9 Wireless Headphones"></div>
+</div></section>
+
+<section class="section"><div class="container">
+<div class="sec-head"><div><span class="eyebrow">Categories</span><h2>Shop by category</h2></div><a class="btn ghost" href="shop.html">View all products</a></div>
+<div class="cat-grid reveal">
+<a class="cat-card" href="shop.html"><div class="ci">&#127911;</div><h3>Audio</h3><span>3 products</span></a><a class="cat-card" href="shop.html"><div class="ci">&#⌚;</div><h3>Wearables</h3><span>2 products</span></a><a class="cat-card" href="shop.html"><div class="ci">&#128187;</div><h3>Computing</h3><span>3 products</span></a><a class="cat-card" href="shop.html"><div class="ci">&#127918;</div><h3>Gaming</h3><span>2 products</span></a><a class="cat-card" href="shop.html"><div class="ci">&#128268;</div><h3>Accessories</h3><span>2 products</span></a>
+</div></div></section>
+
+<section class="section" style="padding-top:0"><div class="container">
+<div class="badges reveal">
+<div class="badge-card"><div class="bi">&#128666;</div><div><h3>Free Shipping</h3><p>Free on all orders over $75.</p></div></div>
+<div class="badge-card"><div class="bi">&#128176;</div><div><h3>Money Guarantee</h3><p>30-day money-back promise.</p></div></div>
+<div class="badge-card"><div class="bi">&#9742;</div><div><h3>Support 24/7</h3><p>Real humans, day and night.</p></div></div>
+<div class="badge-card"><div class="bi">&#128274;</div><div><h3>Secure Payment</h3><p>Every card accepted, safely.</p></div></div>
+</div></div></section>
+
+<section class="section" style="padding-top:0"><div class="container">
+<div class="promos">
+<div class="promo p1 reveal"><div class="pt"><div class="off">20% OFF</div><h3>Summer Audio Sale</h3><p>Headphones, earbuds and speakers. While stock lasts.</p><a class="btn dark" href="shop.html">Shop Audio</a></div><img src="images/voltedge-earbuds.jpg" alt="Wireless earbuds"></div>
+<div class="promo p2 reveal"><div class="pt"><div class="off">New In</div><h3>Wearables Drop</h3><p>Smartwatches and bands that track everything that matters.</p><a class="btn solid" href="shop.html">Shop Wearables</a></div><img src="images/voltedge-smartwatch.jpg" alt="Smartwatch"></div>
+</div></div></section>
+
+<section class="section" style="padding-top:0"><div class="container">
+<div class="sec-head"><div><span class="eyebrow">Customer Favorites</span><h2>Best seller products</h2></div><a class="btn ghost" href="shop.html">Shop all</a></div>
+<div class="prod-grid" data-grid="bestsellers" data-limit="8"></div>
+</div></section>
+
+<section class="section" style="padding-top:0"><div class="container">
+<div class="sale-band reveal">
+<div><span class="eyebrow">Limited Time</span>
+<h2>Flash deals end in <em>48 hours</em></h2>
+<p>Extra savings on the VisionVR One, AeroBook 14 and more. When the timer hits zero, prices go back up.</p>
+<div class="countdown" id="countdown">
+<div class="cd-cell"><b data-d>02</b><span>Days</span></div>
+<div class="cd-cell"><b data-h>14</b><span>Hours</span></div>
+<div class="cd-cell"><b data-m>22</b><span>Mins</span></div>
+<div class="cd-cell"><b data-s>10</b><span>Secs</span></div>
+</div>
+<a class="btn solid" href="shop.html">Shop the Sale</a></div>
+<div><img src="images/voltedge-vr.jpg" alt="VisionVR One VR headset"></div>
+</div></div></section>
+
+<section class="section" style="padding-top:0"><div class="container">
+<div class="sec-head"><div><span class="eyebrow">From the Journal</span><h2>Recent news</h2></div><a class="btn ghost" href="news.html">All stories</a></div>
+<div class="news-grid">
+<a class="news-card reveal" href="news-unboxing-aurora-x9.html"><img src="images/voltedge-news-1.jpg" alt="Unboxing headphones" loading="lazy"><div class="nb"><span class="k">Reviews</span><h3>Unboxing the Aurora X9: first impressions</h3><p>We tore the box open so you do not have to. Spoiler: the ANC is the real deal.</p></div></a>
+<a class="news-card reveal" href="news-desk-setup.html"><img src="images/voltedge-news-2.jpg" alt="Desk setup with gadgets" loading="lazy"><div class="nb"><span class="k">Guides</span><h3>The $500 desk setup that feels like $2,000</h3><p>Five pieces of gear, one tidy desk, zero cable chaos.</p></div></a>
+<a class="news-card reveal" href="news-vr-fitness.html"><img src="images/voltedge-news-3.jpg" alt="Person using VR headset" loading="lazy"><div class="nb"><span class="k">Gaming</span><h3>VR fitness actually works (we tested it)</h3><p>Two weeks, one headset, and a surprising amount of sweat.</p></div></a>
+</div></div></section>
+<section class="news-band section" style="padding:64px 0"><div class="container news-flex reveal">
+<div><h3 style="font-size:1.5rem;margin-bottom:.4rem">Get 10% off your first order.</h3>
+<p style="color:var(--muted);margin:0">Join the list for drops, deals and honest reviews. No spam, ever.</p></div>
+<form class="js-form news-form" novalidate>
+<div class="form-success" hidden style="flex:1 1 100%">Welcome aboard. Your 10% code is on its way.</div>
+<input type="email" required placeholder="Your email address" aria-label="Email address">
+<button class="btn solid" type="submit">Subscribe</button>
+</form></div></section>
+<footer class="site-footer"><div class="container">
+<div><div class="foot-brand">Volt<span>Edge</span></div>
+<p style="font-size:.92rem;max-width:300px;margin-top:1rem">Everyday tech, honestly priced. This is a demonstration storefront; no real orders are processed.</p></div>
+<div><h5>Shop</h5><ul><li><a href="shop.html">All Products</a></li><li><a href="shop.html">Audio</a></li><li><a href="shop.html">Wearables</a></li><li><a href="shop.html">Gaming</a></li><li><a href="wishlist.html">Wishlist</a></li></ul></div>
+<div><h5>Support</h5><ul><li><a href="faq.html">FAQ</a></li><li><a href="shipping-returns.html">Shipping &amp; Returns</a></li><li><a href="contact.html">Contact</a></li><li><a href="about.html">About</a></li></ul></div>
+<div><h5>Company</h5><ul><li><a href="news.html">News</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms</a></li><li><a href="cart.html">Cart</a></li></ul></div>
+</div>
+<div class="footer-bottom"><div class="container">
+<span>&copy; <span class="js-year">2026</span> VoltEdge. A demonstration storefront.</span>
+<span>Developed by <a href="https://teta.dpdns.org">Teta Digitals</a></span>
+</div></div></footer>
+<script>window.VOLTEDGE_PRODUCTS = [{"slug": "aurora-x9", "name": "Aurora X9 Wireless Headphones", "cat": "Audio", "price": 249.0, "was": 329.0, "rating": 4.9, "reviews": 214, "badge": "Best Seller", "best": true, "img": "voltedge-headphones.jpg", "desc": "Flagship over-ear headphones with adaptive noise cancellation, 40-hour battery life and studio-tuned 40mm drivers."}, {"slug": "pulse-buds", "name": "Pulse Buds Pro", "cat": "Audio", "price": 129.0, "was": null, "rating": 4.7, "reviews": 98, "badge": "New", "best": true, "img": "voltedge-earbuds.jpg", "desc": "Feather-light earbuds with hybrid noise cancellation, wireless charging and crystal-clear call mics."}, {"slug": "boombox-360", "name": "BoomBox 360 Speaker", "cat": "Audio", "price": 179.0, "was": null, "rating": 4.8, "reviews": 167, "badge": null, "best": true, "img": "voltedge-speaker.jpg", "desc": "Room-filling 360-degree sound with deep bass radiators and 24-hour playtime. Built for the backyard."}, {"slug": "pulse-fit", "name": "Pulse Fit S Smartwatch", "cat": "Wearables", "price": 199.0, "was": 259.0, "rating": 4.8, "reviews": 301, "badge": "Sale", "best": true, "img": "voltedge-smartwatch.jpg", "desc": "AMOLED display, heart-rate and sleep tracking, GPS and 14-day battery. Your coach, on your wrist."}, {"slug": "orbit-band", "name": "Orbit Band 2", "cat": "Wearables", "price": 79.0, "was": null, "rating": 4.6, "reviews": 188, "badge": null, "best": false, "img": "voltedge-band.jpg", "desc": "Slim fitness band with 24/7 heart-rate monitoring, 120 sport modes and 21-day battery life."}, {"slug": "aerobook-14", "name": "AeroBook 14 Laptop", "cat": "Computing", "price": 999.0, "was": 1199.0, "rating": 4.9, "reviews": 76, "badge": "Sale", "best": true, "img": "voltedge-laptop.jpg", "desc": "Featherweight aluminum laptop with a 2.8K display, all-day battery and silent performance for work and play."}, {"slug": "slate-tab", "name": "Slate Tab 11", "cat": "Computing", "price": 449.0, "was": null, "rating": 4.7, "reviews": 54, "badge": "New", "best": false, "img": "voltedge-tablet.jpg", "desc": "11-inch tablet with stylus support, quad speakers and a display that loves movies and sketching equally."}, {"slug": "mechtype-75", "name": "MechType 75 Keyboard", "cat": "Computing", "price": 139.0, "was": null, "rating": 4.8, "reviews": 143, "badge": null, "best": false, "img": "voltedge-keyboard.jpg", "desc": "Gasket-mounted 75% mechanical keyboard with hot-swappable switches and south-facing RGB."}, {"slug": "strikepad", "name": "StrikePad Pro Controller", "cat": "Gaming", "price": 89.0, "was": null, "rating": 4.9, "reviews": 267, "badge": "Best Seller", "best": true, "img": "voltedge-controller.jpg", "desc": "Pro-grade wireless controller with hall-effect sticks, remappable back paddles and 40-hour battery."}, {"slug": "vision-vr", "name": "VisionVR One Headset", "cat": "Gaming", "price": 399.0, "was": 499.0, "rating": 4.8, "reviews": 189, "badge": "Sale", "best": true, "img": "voltedge-vr.jpg", "desc": "Standalone VR headset with 4K clarity per eye, inside-out tracking and a library of 500+ experiences."}, {"slug": "voltcharge", "name": "VoltCharge GaN 65W", "cat": "Accessories", "price": 49.0, "was": null, "rating": 4.7, "reviews": 322, "badge": null, "best": false, "img": "voltedge-charger.jpg", "desc": "Pocket-size 65W GaN charger that powers your laptop, tablet and phone at full speed, all at once."}, {"slug": "snapbank", "name": "SnapBank Magnetic Power Bank", "cat": "Accessories", "price": 39.0, "was": 59.0, "rating": 4.6, "reviews": 156, "badge": "Sale", "best": false, "img": "voltedge-powerbank.jpg", "desc": "10,000mAh magnetic power bank that snaps to your phone and charges wirelessly at 15W."}];</script>
+<script src="store.js"></script>
+</body>
+</html>
