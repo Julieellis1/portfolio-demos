@@ -106,7 +106,8 @@ section{padding:96px 0;position:relative}
 .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 .feat-card{background:#fff;border-radius:var(--r);padding:40px 34px;text-align:center;box-shadow:var(--shadow);transition:transform .35s var(--ease)}
 .feat-card:hover{transform:translateY(-8px) rotate(-.5deg)}
-.feat-ico{width:76px;height:76px;margin:0 auto 22px}
+.feat-ico{width:76px;height:76px;margin:0 auto 22px;display:flex;align-items:center;justify-content:center;overflow:hidden;flex:none}
+.feat-ico svg{width:58px;height:58px;flex:none}
 .feat-card h3{color:var(--blue);font-size:24px;margin-bottom:12px}
 .feat-card p{color:var(--grey);font-size:16px}
 .feat-card img.ph{border-radius:20px;margin-bottom:22px;aspect-ratio:16/10;object-fit:cover;width:100%}
@@ -197,12 +198,16 @@ section{padding:96px 0;position:relative}
 .info-pill span{color:var(--grey);font-size:15px}
 .map-wrap{border-radius:32px;overflow:hidden;box-shadow:var(--shadow);margin-top:56px;position:relative}
 .map-wrap iframe{width:100%;height:420px;border:0;display:block}
+.map-demo{background:var(--sky);border:2px dashed var(--blue);border-radius:var(--r);padding:60px 30px;text-align:center;font-weight:700;color:var(--blue-dark);font-family:var(--font-d)}
 
 /* ---------- newsletter ---------- */
 .news-band{background:var(--blue);border-radius:32px;padding:54px 56px;display:flex;align-items:center;gap:36px;flex-wrap:wrap;box-shadow:var(--shadow);position:relative;overflow:hidden}
 .news-band h2{color:#fff;font-size:clamp(26px,3vw,36px);flex:1;min-width:240px}
 .news-form{display:flex;gap:14px;flex:2;min-width:280px}
 .news-form input{flex:1;border:0;border-radius:var(--pill);padding:17px 28px;font-family:var(--font-b);font-size:16px;outline:none}
+.news-star{top:18px;left:24px;width:64px;height:64px;opacity:.85}
+.news-band .form-ok,.news-band .form-err{flex-basis:100%;margin:0}
+.form-err{display:none;background:#FFF1F4;border:2px dashed var(--pink);color:#C2435F;border-radius:16px;padding:12px 20px;margin:0 0 16px;font-weight:700}
 
 /* ---------- blog ---------- */
 .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
@@ -245,6 +250,7 @@ section{padding:96px 0;position:relative}
 .band-blue{background:var(--blue);border-radius:36px;padding:70px 60px;text-align:center;color:#fff;position:relative;overflow:hidden}
 .band-blue h2{color:#fff;font-size:clamp(30px,4vw,46px);margin-bottom:16px}
 .band-blue p{color:rgba(255,255,255,.88);max-width:56ch;margin:0 auto 30px;font-size:18px}
+.band-star{top:26px;right:30px;width:66px;height:66px;opacity:.9}
 .kv-table{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
 .kv-table th,.kv-table td{padding:20px 28px;text-align:left;border-bottom:2px dashed var(--line)}
 .kv-table th{background:var(--blue);color:#fff;font-family:var(--font-d);font-size:17px}
@@ -277,8 +283,9 @@ footer .wave-top{display:block;width:100%;height:70px;transform:translateY(-68px
 .foot-contact{list-style:none;display:flex;flex-direction:column;gap:12px;font-size:16px;color:rgba(255,255,255,.9)}
 .foot-base{border-top:2px dashed rgba(255,255,255,.5);padding:26px 0 30px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:15px;color:rgba(255,255,255,.85)}
 .foot-base a{color:#fff;font-weight:700;text-decoration:underline}
-.to-top{position:fixed;right:26px;bottom:26px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--yellow);border:0;cursor:pointer;display:none;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(255,201,60,.5);font-size:24px;color:var(--ink)}
+.to-top{position:fixed;right:26px;bottom:26px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--yellow);border:0;cursor:pointer;display:none;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(255,201,60,.5);font-size:24px;color:var(--ink);transition:opacity .3s,transform .3s}
 .to-top.show{display:flex}
+.to-top.over-footer{opacity:0;pointer-events:none;transform:translateY(14px)}
 
 /* ---------- reveal ---------- */
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s var(--ease),transform .8s var(--ease)}

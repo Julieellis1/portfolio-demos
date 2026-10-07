@@ -76,20 +76,31 @@
     toTop.addEventListener('click', function () {
       window.scrollTo({ top: 0, behavior: REDUCED ? 'auto' : 'smooth' });
     });
+    var footerEl = document.querySelector('footer');
+    if (footerEl && 'IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { toTop.classList.toggle('over-footer', en.isIntersecting); });
+      }).observe(footerEl);
+    }
   }
 
   /* forms: demo validation + success note */
   document.querySelectorAll('form[data-demo-form]').forEach(function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var ok = true;
+      var ok = true, firstBad = null;
       form.querySelectorAll('[required]').forEach(function (f) {
         var bad = !f.value.trim() || (f.type === 'email' && !/^\S+@\S+\.\S+$/.test(f.value));
         f.style.borderColor = bad ? '#EF5D7E' : '';
-        if (bad) ok = false;
+        f.setAttribute('aria-invalid', bad ? 'true' : 'false');
+        if (bad) { ok = false; if (!firstBad) firstBad = f; }
       });
-      if (!ok) return;
-      var note = form.parentElement.querySelector('.form-ok');
+      var wrap = form.parentElement;
+      var err = wrap ? wrap.querySelector('.form-err') : null;
+      var note = wrap ? wrap.querySelector('.form-ok') : null;
+      if (err) err.style.display = ok ? 'none' : 'block';
+      if (note && !ok) note.style.display = 'none';
+      if (!ok) { if (firstBad) firstBad.focus(); return; }
       if (note) { note.style.display = 'block'; note.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
       form.reset();
     });
