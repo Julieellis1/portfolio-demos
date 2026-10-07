@@ -171,7 +171,8 @@ section{padding:96px 0;position:relative}
 .price-card .btn{align-self:flex-start;background:#fff}
 
 /* ---------- faq ---------- */
-.faq-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.faq-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start;position:relative}
+.faq-sun{width:120px;height:120px;top:0;right:0;opacity:.9}
 .faq-item{border-bottom:2px dashed var(--line);padding:22px 4px}
 .faq-q{width:100%;background:none;border:0;display:flex;justify-content:space-between;align-items:center;gap:18px;cursor:pointer;font-family:var(--font-d);font-weight:700;font-size:20px;color:var(--ink);text-align:left}
 .faq-q .chev{flex:none;width:38px;height:38px;border-radius:50%;background:var(--pinksoft);display:flex;align-items:center;justify-content:center;transition:transform .3s}
